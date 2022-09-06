@@ -4,3 +4,4 @@ rm -rf frontend/dist
 cd frontend && npm install && npm run build && mv dist ../backend/src/main/resources/static
 cd ../backend && mvn clean package
 cd ../ && docker build -t waterknife/exam .
+docker push waterknife/exam
